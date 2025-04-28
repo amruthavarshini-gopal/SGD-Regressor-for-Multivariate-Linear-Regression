@@ -12,13 +12,21 @@ To write a program to predict the price of the house and number of occupants in 
 
 ## Algorithm:
 
-1.Load California housing data, select features and targets, and split into training and testing sets.
+Step 1:Start the program.
 
-2.Scale both X (features) and Y (targets) using StandardScaler.
+Step 2: Load the California Housing dataset and select the first three features as inputs (X), and the target and an additional feature (Y) for prediction..
 
-3.Use SGDRegressor wrapped in MultiOutputRegressor to train on the scaled training data.
+Step 3: Scale both the input features (X) and target variables (Y) using StandardScaler.
 
-4.Predict on test data, inverse transform the results, and calculate the mean squared error.
+Step 4: Initialize SGDRegressor and use MultiOutputRegressor to handle multiple output variables.
+
+Step 5: Initialize SGDRegressor and use MultiOutputRegressor to handle multiple output variables.
+
+Step 6: Train the model using the scaled training data, and predict outputs on the test data.
+
+Step 7: Inverse transform predictions and evaluate the model using the mean squared error (MSE). Print the MSE and sample predictions.
+
+Step 6:Stop the program.
 
 ## Program:
 ```
@@ -73,8 +81,11 @@ print("\nPredictions:\n",y_pred[:5])
 
 ## Output:
 
+### Head of the Dataset
 ![Screenshot 2025-03-10 155353](https://github.com/user-attachments/assets/cc9cc1a6-dc68-4bb4-b67f-27eaed1a18fe)
-![Screenshot 2025-03-10 155434](https://github.com/user-attachments/assets/42d02cba-3dcf-462f-a0f6-077d73f3d179)
+
+### Mean Squared Error and Predicted Values
+![Screenshot 2025-04-28 144407](https://github.com/user-attachments/assets/e1f36f8f-5573-49f3-b589-83e95dcd5bfb)
 
 ## Result:
 
